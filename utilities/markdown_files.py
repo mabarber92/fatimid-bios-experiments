@@ -128,7 +128,7 @@ class mARkdownFile():
             print(f"{len(results_list)} headers found containing the regex")
             for i, result in enumerate(results_list):
                 if type(result) == dict:
-                    print(f"Result {i}: {result["header"][:1000]}...")
+                    print(f"Result {i}: {result['header'][:1000]}...")
                 else:
                     print(f"Result {i}: {result[:1000]}...")
             choice = int(input("Enter the number of the header to use: "))
@@ -228,7 +228,7 @@ class mARkdownFile():
         """Search the whole text for a regex - return list of matches"""
         # Clean text of markdown for this kind of searching
         clean_text = re.sub(r'\n+', " ", self.mARkdown_text)
-        clean_text = re.sub(r'[#~\$|:a-zA-Z\d=*()%]', '', clean_text)
+        clean_text = re.sub(r'[#~\$|:a-zA-Z\d=*()%"\'><@,.:;?؟،؛!«»\[\]-]', '', clean_text)
         clean_text = re.sub(r'\s+', " ", clean_text)
         results = re.findall(regex, clean_text)
 

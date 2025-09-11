@@ -3,8 +3,6 @@ similarity"""
 from utilities.markdown_files import markdownCorpus
 import pandas as pd
 import os
-from sentence_transformers import SentenceTransformer
-from bertopic import BERTopic
 import json
 
 CITATION_REGEX = r"(\W\w++){0,5}\W*([و]قال|ذكر|يقول)(\W\w++){0,14}\W+[ال]?ل?سير[هة]\W*(\W\w++){5}"
@@ -14,16 +12,35 @@ WORD_PATTERN = r"(?:\W+\w+)"
 START_DATE = 0
 END_DATE = 1500
 
-    
+def initialiseEmbedModel(model_name, seqLength=512):
+    from sentence_transformers import SentenceTransformer, models
+    from torch import nn
+    from torch import cuda
+    print("loading model...")       
+    word_embedding_model = models.Transformer(model_name, seqLength)
+    pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(),
+                                pooling_mode_mean_tokens=True)
+    dense_model = models.Dense(in_features=pooling_model.get_sentence_embedding_dimension(), 
+                            out_features=seqLength, 
+                            activation_function=nn.Tanh())
+    # It seems we may not need the device set up
+    device = "cuda:0" if cuda.is_available() else "cpu"
+    print(device)
+    model = SentenceTransformer(modules=[word_embedding_model, pooling_model, dense_model], device = device)
+    print("model loaded")
+    return model    
 
-def build_citation_regex(cit_phrase, bio_phrase, pre_capture_len=5, mid_capture_len=14, post_capture_len=5):
+def build_citation_regex(cit_phrase, bio_phrase, pre_capture_len=0, mid_capture_len=14, post_capture_len=5):
     """Build a regex to capture possible references to biographies, capturing a set number of 
     tokens before (pre_capture_len), between the citation (cit_phrase) and the biographical marker (bio_phrase)
     (the mid_capture_len), and after the main phrase (post_capture_len). 
     Greedier captures with more context are more likely to capture greater variety of references to biographies,
     but they might be noisier for certain forms of clustering and alignment
     For regex to work - most clean out any markdown (e.g. ~~ and #)"""
-    full_regex = rf"{WORD_PATTERN}{{0,{pre_capture_len}}}\W+{cit_phrase}{WORD_PATTERN}{{0,{mid_capture_len}}}\W+{bio_phrase}{WORD_PATTERN}{{{post_capture_len}}}"
+    if pre_capture_len == 0:
+        full_regex =  rf"\W+{cit_phrase}{WORD_PATTERN}{{0,{mid_capture_len}}}\W+{bio_phrase}{WORD_PATTERN}{{{post_capture_len}}}"
+    else:
+        full_regex = rf"{WORD_PATTERN}{{0,{pre_capture_len}}}\W+{cit_phrase}{WORD_PATTERN}{{0,{mid_capture_len}}}\W+{bio_phrase}{WORD_PATTERN}{{{post_capture_len}}}"
 
     return full_regex
     
@@ -39,12 +56,14 @@ def search_citations(corpus_path, meta_csv, regex, return_csv=None):
         df.to_csv(return_csv, index=False, encoding="utf-8-sig")
     return df["search_result"].tolist()
 
-def embed_and_cluster(found_spans, model_name="CAMeL-Lab/bert-base-arabic-camelbert-ca", json_out=None):
+def embed_and_cluster(found_spans, model_name="CAMeL-Lab/bert-base-arabic-camelbert-mix", json_out=None):
     """Embed the spans with sequence embeddings and cluster them using BERTopic (so we have posssible labels for
     clusters of citations). Output a json of cluster labels and aligned sequences"""
 
+    from bertopic import BERTopic
 
-    model = SentenceTransformer(model_name)
+
+    model = initialiseEmbedModel(model_name, seqLength=25)
     embeddings = model.encode(found_spans, show_progress_bar=True)
 
     topic_model = BERTopic(language="arabic", calculate_probabilities=True, verbose=True)
@@ -54,10 +73,10 @@ def embed_and_cluster(found_spans, model_name="CAMeL-Lab/bert-base-arabic-camelb
     topic_dict = {}
     for topic_num in clustered["Topic"]:
         topic_dict[topic_num] = {}
-        topic_dict[topic_num]["label"] = clustered[clustered["Topic"]==topic_num]["Name"].values[0]
+        topic_dict[topic_num]["label"] = str(clustered[clustered["Topic"]==topic_num]["Name"].values[0])
         topic_dict[topic_num]["members"] = [found_spans[i] for i, t in enumerate(topics) if t == topic_num]
-        topic_dict[topic_num]["size"] = clustered[clustered["Topic"]==topic_num]["Count"].values[0]
-    
+        topic_dict[topic_num]["size"] = int(clustered[clustered["Topic"]==topic_num]["Count"].values[0])
+
     if json_out:
         with open(json_out, "w", encoding="utf-8") as f:
             json.dump(topic_dict, f, ensure_ascii=False, indent=4)
