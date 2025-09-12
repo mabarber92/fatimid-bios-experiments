@@ -55,7 +55,7 @@ class testSetEvaluator():
             self._similarity_thresholds = similarity_threshold_range[:]
         else:
             raise ValueError("A np arrange object or a list of values must be supplied for the similarity threshold")
-        if type(layers) == range:
+        if type(layers) == list:
             self._layers = layers[:]
         else:
             raise ValueError("A list of layers must be supplied for the hidden layers")
@@ -101,14 +101,15 @@ class testSetEvaluator():
          Return a list of lists that reflects the - separate function allows for easy parallisation"""
         cut_sequences = self.run_parameter_set(threshold, hidden_layer)
         scores = self.score_performance(cut_sequences)
-        return {"layer": hidden_layer, "threshold": threshold, "scores": scores}
+        result = {"layer": hidden_layer, "threshold": threshold, "scores": scores}
+
+        return result
     
     def record_scores(self, layer, threshold, scores, performance_matrix):
         """Take all the scores for one layer and threshold run - append to the test_df and add summary
         to performance matrix"""
         # Append list of scores to the main test_df
         self.test_df[f"{layer}_{threshold}"] = scores
-
         # Calculate sum and output
         total_score =sum(scores)
         performance_matrix.append({"layer": layer, "threshold": threshold, "score": total_score})
@@ -125,15 +126,17 @@ class testSetEvaluator():
         performance_matrix = []
 
         # Loop through layers
-        for layer in self._layers:
+        for layer in tqdm(self._layers):
+            print(layer)
 
             # If parralelising, initiate pool and imap
             if self.multi_process:
                 args = [(threshold, layer) for threshold in self._similarity_thresholds]
                 with Pool(self.cpu_count) as pool:
-                    all_scores = tqdm(pool.starmap(self.run_and_score, args), total=len(args))
-                    for score in all_scores:
-                        performance_matrix = self.record_scores(self, score["layer"], score["threshold"], score["scores"])
+                    all_scores = pool.starmap(self.run_and_score, args)
+                
+                for score in all_scores:
+                    performance_matrix = self.record_scores(score["layer"], score["threshold"], score["scores"], performance_matrix)
 
             # If not loop and append to scores
             else:
@@ -184,5 +187,6 @@ if __name__ == "__main__":
     csv_in = "../../data/sira_citations.csv"
     csv_out = "../../data/citations_cut_evaluation.csv"
 
-    prepare_eval_set(csv_in, csv_out, "search_result")
+    # prepare_eval_set(csv_in, csv_out, "search_result")
+    testSetEvaluator(csv_out)
 

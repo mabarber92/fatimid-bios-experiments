@@ -20,12 +20,17 @@ def compute_embeddings(sentence, tokenizer, transformer_model):
     # Compute the embeddings for the tokens and extract the hidden states from the specified layer
     embeddings = transformer_model(**tokens, output_hidden_states=True)
 
-    return offsets[0].tolist(), tokens_as_strings, embeddings
+    # Detach the hidden states (so they can be used in multiprocesing)
+    detached_hidden_states = tuple(layer.detach().cpu() for layer in embeddings.hidden_states)
+
+    return offsets[0].tolist(), tokens_as_strings, detached_hidden_states
 
 def select_layer_clean(offsets, tokens_as_strings, embeddings, hidden_layer, tokenizer):
     """Select a hidden layer from embeddings and clean out the special tokens
     return the cleaned embeddings and corresponding offsets as lists"""
-    layer_embs = embeddings.hidden_states[hidden_layer][0]
+    
+
+    layer_embs = embeddings[hidden_layer][0]
 
     # Remove special tokens and their embeddings
     cleaned_embeds = []
@@ -35,7 +40,7 @@ def select_layer_clean(offsets, tokens_as_strings, embeddings, hidden_layer, tok
         if token in special_tokens:
             continue
         else:
-            cleaned_embeds.append(embedding.detach().cpu().numpy())
+            cleaned_embeds.append(embedding.numpy())
             cleaned_offsets.append(offset)
     
     return cleaned_offsets, cleaned_embeds
@@ -66,7 +71,7 @@ def compute_cut(offsets, embeds, original_sequence, threshold=0.5, logging=False
         # Check the next token exists
         if token_pos + 1 >= len(embeds):
             cut = True
-            cut_pos = len(embeds) # Don't cut the sequence - take original length'
+            cut_pos = -1 # Don't cut the sequence - take original length'
         elif (base_sim - cosine_similarity([embeds[token_pos]], [embeds[token_pos+1]])[0][0]) > threshold:
             cut = True
             if logging:
