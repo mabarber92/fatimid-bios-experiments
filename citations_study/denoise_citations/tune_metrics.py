@@ -194,12 +194,14 @@ def prepare_eval_set(sequences_csv, out_csv, input_col, base_col="test_sequences
     sample_df.to_csv(out_csv, index=False, encoding='utf-8-sig')
 
 if __name__ == "__main__":
-    csv_in = "../../data/sira_citations.csv"
-    csv_out = "../../data/citations_cut_evaluation.csv"
+    csv_in = "../../data/sira_citations_long_files.csv"
+    csv_out = "../../data/citations_long_cut_evaluation.csv"
 
-    import logging
-    logging.getLogger("torch.distributed.elastic.multiprocessing.redirects").setLevel(logging.ERROR)
+    # prepare_eval_set(csv_in, csv_out, "search_result", sample_size=200)
+
+    # import logging
+    # logging.getLogger("torch.distributed.elastic.multiprocessing.redirects").setLevel(logging.ERROR)
 
     # prepare_eval_set(csv_in, csv_out, "search_result")
-    testSetEvaluator(csv_out, model_name="CAMeL-Lab/bert-base-arabic-camelbert-msa", output_folder="camel-bert-msa-test-results")
+    testSetEvaluator(csv_out, model_name="aubmindlab/bert-base-arabertv2", output_folder="arabert-longer-results")
 
