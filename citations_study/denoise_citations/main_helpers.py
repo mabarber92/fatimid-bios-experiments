@@ -55,12 +55,14 @@ def embed_and_tokenise(sentence, tokenizer, transformer_model, hidden_layer=-1):
     
     return cleaned_offsets, cleaned_embeds
 
-def compute_cut(offsets, embeds, original_sequence, threshold=0.5, logging=False):
+def compute_cut(offsets, embeds, original_sequence, threshold=0.5, rolling_base_sim=False, logging=False):
     """Using the embeddings for each token, compute the optimum cut point in the sequence
     This is a placeholder function that will be tuned in tune_metrics.py
     Note for the cases that this is tuned on we know that the sequence starts in the right place, we're looking
     for the end. Moreover, we know that the sequence will at least be of length 2 - so we use the distance between
-    the first two sub-tokens as our baseline and measure the drop in similarity from there."""
+    the first two sub-tokens as our baseline and measure the drop in similarity from there.
+    If we choose to use rolling_base_sim, then we compare how similar each pair of tokens is to following token, rather than
+    relying on the first pair as our anchor."""
 
     # Compute the consine similarity between the first two tokens
     base_sim = cosine_similarity([embeds[0]], [embeds[1]])[0][0]
@@ -68,17 +70,25 @@ def compute_cut(offsets, embeds, original_sequence, threshold=0.5, logging=False
     cut = False
     token_pos = 1
     while not cut:
+
         # Check the next token exists
         if token_pos + 1 >= len(embeds):
             cut = True
             cut_pos = -1 # Don't cut the sequence - take original length'
-        elif (base_sim - cosine_similarity([embeds[token_pos]], [embeds[token_pos+1]])[0][0]) > threshold:
-            cut = True
-            if logging:
-                print("Cut at token position ", token_pos)
-            cut_pos = token_pos + 1 # Cut after this token
         else:
-            token_pos += 1
+            # If we have a following token - calculate the similarity
+            current_similarity = cosine_similarity([embeds[token_pos]], [embeds[token_pos+1]])[0][0]
+            if base_sim - current_similarity > threshold:
+                cut = True
+                if logging:
+                    print("Cut at token position ", token_pos)
+                cut_pos = token_pos + 1 # Cut after this token
+                    
+            else:
+                # If taking a rolling base similarity - reset the base similarity to the current, ready for the next comparison
+                if rolling_base_sim:
+                    base_sim = current_similarity
+                token_pos += 1
     
     # Now we have the cut position, we use it to find the offset boundary and walk until we hit a space
     cut_offset = offsets[cut_pos][1]  # End of the token at the cut position

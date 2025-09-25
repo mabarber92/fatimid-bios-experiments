@@ -3,6 +3,7 @@ import pandas as pd
 from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
 import numpy as np
+import os
 
 class testSetEvaluator():
     """Take a test set and evaluate the citation cutter for the specified range of parameters
@@ -11,7 +12,7 @@ class testSetEvaluator():
     Can be used to """
     def __init__ (self, test_csv, similarity_threshold_range = np.arange(0.05, 0.5, 0.05), 
                   layers=[0, 5, 6, 7, 8, 9, 10, 11, 12], model_name = "CAMeL-Lab/bert-base-arabic-camelbert-mix",
-                  test_col = "test_sequences", ground_truth_col = "ground_truth", run_tests = True, multi_process = True):
+                  test_col = "test_sequences", ground_truth_col = "ground_truth", run_tests = True, multi_process = True, output_folder="results/", rolling_base_sim=False):
         
         # Check and set the parameters - we do this first in case these values have errors
         self._check_set_parameters(similarity_threshold_range, layers)
@@ -22,13 +23,16 @@ class testSetEvaluator():
         # Set the multiprocessing
         self.toggle_multi_process(multi_process)
         
+        # Set whether we will use the rolling_base_sim parameter when computing a cut
+        self.rolling_base_sim = rolling_base_sim
+
         # Now we know we have valid parameters and data we can initiatise models
         # Initialise the embedding model
         self.tokenizer, self.transformer_model = initialiseEmbedModel(model_name)
 
         # If we're running tests when we initialise the evaluator then we run pipeline
         if run_tests:
-            self.run_pipeline()
+            self.run_pipeline(output_folder)
 
     def toggle_multi_process(self, activate):
         """Function to activate and deactivate multiprocessing for functions that require it"""
@@ -82,7 +86,7 @@ class testSetEvaluator():
         cut_sequences = []
         for test_sequence, offsets, tokens_as_strings, embeddings in zip(self.test_sequences, self.offsets, self.tokens_as_strings, self.embeddings):
             offsets, layer_embeddings = select_layer_clean(offsets, tokens_as_strings, embeddings, hidden_layer, self.tokenizer)
-            cut_sequence = compute_cut(offsets, layer_embeddings, test_sequence, threshold)
+            cut_sequence = compute_cut(offsets, layer_embeddings, test_sequence, threshold, rolling_base_sim=self.rolling_base_sim)
             cut_sequences.append(cut_sequence)
         
         return cut_sequences
@@ -163,10 +167,16 @@ class testSetEvaluator():
 
 
 
-    def run_pipeline(self):
+    def run_pipeline(self, output_folder):
         """Run all components of the pipeline in series"""
-        self.score_test_parameters(full_csv="full_parameter_test.csv")
-        self.test_df.to_csv("full_parameter_test_sentences.csv")
+        if not os.path.exists(output_folder):
+            os.mkdir(output_folder)
+        full_csv_dir = os.path.join(output_folder, "full_parameter_test.csv")
+        sentence_results = os.path.join(output_folder, "full_parameter_test_sentences.csv")
+        print(full_csv_dir)
+        print(sentence_results)
+        self.score_test_parameters(full_csv=full_csv_dir)
+        self.test_df.to_csv(sentence_results)
     
 def prepare_eval_set(sequences_csv, out_csv, input_col, base_col="test_sequences", ground_truth_col = "ground_truth", sample_size = 100):
     """Take a csv of sentences, select a sample size at random, add a duplicate column named for evaluation
@@ -187,6 +197,9 @@ if __name__ == "__main__":
     csv_in = "../../data/sira_citations.csv"
     csv_out = "../../data/citations_cut_evaluation.csv"
 
+    import logging
+    logging.getLogger("torch.distributed.elastic.multiprocessing.redirects").setLevel(logging.ERROR)
+
     # prepare_eval_set(csv_in, csv_out, "search_result")
-    testSetEvaluator(csv_out)
+    testSetEvaluator(csv_out, model_name="aubmindlab/bert-base-arabertv2", output_folder="arabert-test-results-rolling-base", rolling_base_sim=True)
 
