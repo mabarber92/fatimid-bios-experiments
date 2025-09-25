@@ -10,4 +10,4 @@ if __name__ == "__main__":
     # run_citation_clustering(corpus_path, meta_csv, existing_results='data/sira_citations.csv')
 
     regex = build_citation_regex(CIT_PHRASE, BIO_PHRASE, post_capture_len=10)
-    found = search_citations(corpus_path, meta_csv, regex, return_csv="data/sira_citations_long.csv")
+    found = search_citations(corpus_path, meta_csv, regex, return_csv="data/sira_citations_long_files.csv", return_book=True)

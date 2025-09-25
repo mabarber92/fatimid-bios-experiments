@@ -292,13 +292,14 @@ class markdownCorpus():
         
         if self.multi_process:
             args = [(file, regex) for file in self.file_list]
-            with Pool(self.cpu_count) as pool:
+            with Pool(self.cpu_count) as pool:                
                 results = tqdm(pool.imap(self._run_search_on_file, args), total=len(args))
+    
                 if list_only:
                     list_of_lists = [result["results"] for result in results]
                     return [item for sublist in list_of_lists for item in sublist]
                 else:
-                    return results
+                    return list(results)
 
         else:
             results = []

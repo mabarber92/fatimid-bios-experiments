@@ -2,6 +2,7 @@
 
 from utilities.markdown_files import markdownCorpus
 import pandas as pd
+from tqdm import tqdm
 
 CITATION_REGEX = r"(\W\w++){0,5}\W*([و]قال|ذكر|يقول)(\W\w++){0,14}\W+[ال]?ل?سير[هة]\W*(\W\w++){5}"
 CIT_PHRASE = r"[و]?(?:قال|ذكر|يقول|[يت]ذكر)"
@@ -25,12 +26,25 @@ def build_citation_regex(cit_phrase, bio_phrase, pre_capture_len=0, mid_capture_
     return full_regex
     
 
-def search_citations(corpus_path, meta_csv, regex, return_csv=None):
+def search_citations(corpus_path, meta_csv, regex, return_csv=None, return_book=False):
     """Search the corpus for citations matching the regex"""
     corpus = markdownCorpus(corpus_path, meta_csv, start_date=START_DATE, end_date=END_DATE,
                             book_uri_list = None, primary_only=True, multi_process=True)
-    results = corpus.search_corpus(regex)
-    df = pd.DataFrame(results, columns=["search_result"])
+    if not return_book:
+        results = corpus.search_corpus(regex)
+        df = pd.DataFrame(results, columns=["search_result"])
+    else:
+        results = corpus.search_corpus(regex, list_only = False)
+        df = pd.DataFrame()
+        for result in tqdm(results):
+            out_dict_list = []
+            file_name = result["file"].split("/")[-1]
+            file_results = result["results"]
+            for file_result in file_results:
+                out_dict_list.append({"file": file_name, "search_result": file_result})
+            temp_df = pd.DataFrame(out_dict_list)
+            df = pd.concat([df, temp_df])
+            
     df = df.drop_duplicates().reset_index(drop=True)
     if return_csv:        
         df.to_csv(return_csv, index=False, encoding="utf-8-sig")
