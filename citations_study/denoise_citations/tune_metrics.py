@@ -176,7 +176,7 @@ class testSetEvaluator():
         print(full_csv_dir)
         print(sentence_results)
         self.score_test_parameters(full_csv=full_csv_dir)
-        self.test_df.to_csv(sentence_results)
+        self.test_df.to_csv(sentence_results, encoding='utf-8-sig', index=False)
     
 def prepare_eval_set(sequences_csv, out_csv, input_col, base_col="test_sequences", ground_truth_col = "ground_truth", sample_size = 100):
     """Take a csv of sentences, select a sample size at random, add a duplicate column named for evaluation
@@ -201,5 +201,5 @@ if __name__ == "__main__":
     logging.getLogger("torch.distributed.elastic.multiprocessing.redirects").setLevel(logging.ERROR)
 
     # prepare_eval_set(csv_in, csv_out, "search_result")
-    testSetEvaluator(csv_out, model_name="aubmindlab/bert-base-arabertv2", output_folder="arabert-test-results-rolling-base", rolling_base_sim=True)
+    testSetEvaluator(csv_out, model_name="CAMeL-Lab/bert-base-arabic-camelbert-msa", output_folder="camel-bert-msa-test-results")
 
