@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>Muqaffa-or14533-3.pdf_page_66.png</fileName>
+      <fileIdentifier>pdf//Muqaffa-or14533-3.pdf</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT1094" LABEL="text" DESCRIPTION="block type text"/><OtherTag ID="BT1066" LABEL="Chancery_Material" DESCRIPTION="block type Chancery_Material"/><OtherTag ID="BT1065" LABEL="Flyleaf" DESCRIPTION="block type Flyleaf"/><OtherTag ID="BT1064" LABEL="default" DESCRIPTION="block type default"/><OtherTag ID="BT1063" LABEL="Marginal_Material" DESCRIPTION="block type Marginal_Material"/><OtherTag ID="BT1062" LABEL="Catchword" DESCRIPTION="block type Catchword"/><OtherTag ID="BT4" LABEL="Illustration" DESCRIPTION="block type Illustration"/><OtherTag ID="BT3" LABEL="Commentary" DESCRIPTION="block type Commentary"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/>
+    <OtherTag ID="LT1" LABEL="Main" DESCRIPTION="line type Main"/><OtherTag ID="LT219" LABEL="default" DESCRIPTION="line type default"/><OtherTag ID="LT220" LABEL="Main-90" DESCRIPTION="line type Main-90"/><OtherTag ID="LT221" LABEL="Main-180" DESCRIPTION="line type Main-180"/><OtherTag ID="LT222" LABEL="Main-270" DESCRIPTION="line type Main-270"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="3991"
+          HEIGHT="3021"
+          PHYSICAL_IMG_NR="262"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="3991"
+                  HEIGHT="3021">
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

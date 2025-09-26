@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>Muqaffa-or14533-3.pdf_page_83.png</fileName>
+      <fileIdentifier>pdf//Muqaffa-or14533-3.pdf</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT1094" LABEL="text" DESCRIPTION="block type text"/><OtherTag ID="BT1066" LABEL="Chancery_Material" DESCRIPTION="block type Chancery_Material"/><OtherTag ID="BT1065" LABEL="Flyleaf" DESCRIPTION="block type Flyleaf"/><OtherTag ID="BT1064" LABEL="default" DESCRIPTION="block type default"/><OtherTag ID="BT1063" LABEL="Marginal_Material" DESCRIPTION="block type Marginal_Material"/><OtherTag ID="BT1062" LABEL="Catchword" DESCRIPTION="block type Catchword"/><OtherTag ID="BT4" LABEL="Illustration" DESCRIPTION="block type Illustration"/><OtherTag ID="BT3" LABEL="Commentary" DESCRIPTION="block type Commentary"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/>
+    <OtherTag ID="LT1" LABEL="Main" DESCRIPTION="line type Main"/><OtherTag ID="LT219" LABEL="default" DESCRIPTION="line type default"/><OtherTag ID="LT220" LABEL="Main-90" DESCRIPTION="line type Main-90"/><OtherTag ID="LT221" LABEL="Main-180" DESCRIPTION="line type Main-180"/><OtherTag ID="LT222" LABEL="Main-270" DESCRIPTION="line type Main-270"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="3963"
+          HEIGHT="3021"
+          PHYSICAL_IMG_NR="279"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="3963"
+                  HEIGHT="3021">
+        <TextBlock HPOS="2101"
+                   VPOS="259"
+                   WIDTH="1388"
+                   HEIGHT="1066"
+                   ID="eSc_textblock_78b8af52"
+                   TAGREFS="BT2">
+          <Shape><Polygon POINTS="3489 322 3489 1306 2114 1325 2114 465 2110 465 2101 259 2762 292"/></Shape>
+          <TextLine ID="eSc_line_350c42b7"
+                    TAGREFS="LT1"
+                    BASELINE="2115 327 2200 318" 
+                    HPOS="2107"
+                    VPOS="259"
+                    WIDTH="91"
+                    HEIGHT="85">
+            <Shape><Polygon POINTS="2182 261 2157 261 2145 259 2107 259 2114 324 2114 344 2198 327 2198 317 2190 261 2182 261"/></Shape>
+            <String CONTENT="لس"
+                    HPOS="2107"
+                    VPOS="259"
+                    WIDTH="91"
+                    HEIGHT="85"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_dc721864"
+                    TAGREFS="LT1"
+                    BASELINE="2132 382 3446 382" 
+                    HPOS="2132"
+                    VPOS="324"
+                    WIDTH="1314"
+                    HEIGHT="111">
+            <Shape><Polygon POINTS="2208 365 2182 367 2132 382 2132 435 2230 435 2303 407 2374 412 2404 435 2756 435 2862 407 2993 425 3212 407 3313 433 3446 407 3446 382 3446 324 3056 342 2976 329 2933 347 2865 332 2847 347 2824 327 2767 324 2736 354 2696 342 2663 360 2527 360 2487 342 2447 360 2412 342 2371 360 2233 360 2208 365"/></Shape>
+            <String CONTENT="ماراى الناس مثا حسنبك بالا هكداهكذا وابلا قلا لافبسع"
+                    HPOS="2132"
+                    VPOS="324"
+                    WIDTH="1314"
+                    HEIGHT="111"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_249ee0d3"
+                    TAGREFS="LT1"
+                    BASELINE="2122 480 3456 463" 
+                    HPOS="2122"
+                    VPOS="443"
+                    WIDTH="1334"
+                    HEIGHT="90">
+            <Shape><Polygon POINTS="2122 518 2311 533 2492 531 2507 516 2880 526 2960 503 3061 518 3076 500 3454 506 3456 463 3454 458 3099 450 3069 465 3044 443 2928 458 2882 443 2779 445 2714 468 2658 448 2631 470 2590 453 2545 470 2507 448 2482 473 2361 473 2331 450 2230 475 2122 475 2122 480 2122 518"/></Shape>
+            <String CONTENT="باستوف لد من احسن ورلعم البماس وابعه ا صرهت م للحمار فقاب"
+                    HPOS="2122"
+                    VPOS="443"
+                    WIDTH="1334"
+                    HEIGHT="90"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_ff498ee2"
+                    TAGREFS="LT1"
+                    BASELINE="2117 566 3472 546" 
+                    HPOS="2114"
+                    VPOS="405"
+                    WIDTH="1355"
+                    HEIGHT="214">
+            <Shape><Polygon POINTS="3446 463 2545 473 2485 488 2467 475 2409 503 2366 485 2328 503 2130 503 2114 563 2114 601 2155 619 2306 596 2339 616 2444 614 2459 596 2482 614 2621 614 2688 591 2767 611 2802 591 2945 609 3089 589 3127 606 3242 584 3298 604 3358 581 3469 579 3469 543 3459 405 3451 405 3446 463"/></Shape>
+            <String CONTENT="اسر احسل نسوهز فتن عره بجيرون رغ"
+                    HPOS="2114"
+                    VPOS="405"
+                    WIDTH="1355"
+                    HEIGHT="214"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_91f93d3b"
+                    TAGREFS="LT1"
+                    BASELINE="2117 652 3479 641" 
+                    HPOS="2114"
+                    VPOS="465"
+                    WIDTH="1363"
+                    HEIGHT="222">
+            <Shape><Polygon POINTS="3446 546 2792 553 2767 556 2515 558 2510 561 2464 558 2424 561 2401 579 2366 561 2331 596 2127 596 2114 649 2114 687 3474 687 3477 639 3459 465 3454 465 3446 546"/></Shape>
+            <String CONTENT="م حسام الدين حت"
+                    HPOS="2114"
+                    VPOS="465"
+                    WIDTH="1363"
+                    HEIGHT="222"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_06ac9573"
+                    TAGREFS="LT1"
+                    BASELINE="2117 739 3479 727" 
+                    HPOS="2114"
+                    VPOS="652"
+                    WIDTH="1363"
+                    HEIGHT="130">
+            <Shape><Polygon POINTS="2114 737 2114 777 2550 782 2570 767 2656 782 2772 762 2807 780 2918 780 3044 760 3174 775 3210 757 3474 775 3477 725 3404 652 3089 654 3059 672 2578 709 2510 689 2477 709 2119 712 2114 737"/></Shape>
+            <String CONTENT="يكره من
+لا يتحفظ في أكله، من إتلاف السفرة أو نثر الطعام بيده ونحو ذلك.
+"
+                    HPOS="2114"
+                    VPOS="652"
+                    WIDTH="1363"
+                    HEIGHT="130"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_92423cb8"
+                    TAGREFS="LT1"
+                    BASELINE="2117 820 3479 815" 
+                    HPOS="2114"
+                    VPOS="740"
+                    WIDTH="1363"
+                    HEIGHT="136">
+            <Shape><Polygon POINTS="2114 818 2114 876 2187 873 2205 855 2253 873 2598 873 2621 855 2734 855 2764 873 2809 853 2870 871 3018 868 3033 853 3293 853 3351 871 3368 853 3474 853 3477 813 3361 740 3117 740 2968 762 2895 740 2865 770 2560 790 2203 790 2170 765 2122 785 2114 818"/></Shape>
+            <String CONTENT="وما زال وافر الحرمة عظيم الوجاهة صاحب نعم جليلة وأموال جمة وغلمان"
+                    HPOS="2114"
+                    VPOS="740"
+                    WIDTH="1363"
+                    HEIGHT="136"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_5f0e7181"
+                    TAGREFS="LT1"
+                    BASELINE="2117 925 3479 906" 
+                    HPOS="2114"
+                    VPOS="830"
+                    WIDTH="1363"
+                    HEIGHT="144">
+            <Shape><Polygon POINTS="2114 923 2114 954 2172 974 2283 974 2318 954 2361 971 2447 956 2623 969 2802 961 2840 941 2890 961 2965 939 3006 959 3177 936 3338 954 3388 933 3434 949 3477 931 3477 903 3348 830 3122 835 3091 850 2965 835 2935 863 2872 850 2595 886 2122 886 2114 923"/></Shape>
+            <String CONTENT="وأتباع على خلقه وآدابه مع كثرتهم إلى أن خرج مع العسكر لقتال غازان "
+                    HPOS="2114"
+                    VPOS="830"
+                    WIDTH="1363"
+                    HEIGHT="144"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_4a167541"
+                    TAGREFS="LT1"
+                    BASELINE="2117 1012 3479 996" 
+                    HPOS="2114"
+                    VPOS="923"
+                    WIDTH="1363"
+                    HEIGHT="136">
+            <Shape><Polygon POINTS="2114 1009 2114 1044 2200 1059 2250 1042 2739 1057 2822 1037 2905 1054 2958 1034 3081 1032 3109 1052 3144 1034 3235 1052 3250 1037 3366 1049 3474 1029 3477 994 3308 923 3049 928 2908 954 2860 939 2840 956 2716 966 2694 951 2676 969 2537 981 2510 966 2482 981 2119 984 2114 1009"/></Shape>
+            <String CONTENT="فمرض
+"
+                    HPOS="2114"
+                    VPOS="923"
+                    WIDTH="1363"
+                    HEIGHT="136"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d4929b4e"
+                    TAGREFS="LT1"
+                    BASELINE="2114 1090 3482 1082" 
+                    HPOS="2114"
+                    VPOS="1077"
+                    WIDTH="1368"
+                    HEIGHT="68">
+            <Shape><Polygon POINTS="2114 1145 2200 1145 2228 1127 2318 1145 2535 1130 2568 1145 2638 1125 2699 1142 2751 1127 2920 1142 2986 1125 3018 1142 3106 1122 3331 1122 3378 1140 3482 1120 3482 1082 3479 1077 2117 1085 2114 1090 2114 1145"/></Shape>
+            <String CONTENT="ربيع
+الآخر سنة تسع وتسعين و"
+                    HPOS="2114"
+                    VPOS="1077"
+                    WIDTH="1368"
+                    HEIGHT="68"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_eb189f2b"
+                    TAGREFS="LT1"
+                    BASELINE="2117 1180 3474 1173" 
+                    HPOS="2117"
+                    VPOS="1147"
+                    WIDTH="1357"
+                    HEIGHT="81">
+            <Shape><Polygon POINTS="2117 1228 2293 1210 2480 1228 2573 1208 2598 1226 2658 1208 2840 1226 2875 1208 3154 1223 3315 1205 3386 1223 3404 1205 3474 1205 3474 1173 3472 1168 3162 1170 3096 1147 3054 1170 2993 1150 2605 1165 2580 1150 2553 1175 2434 1160 2401 1175 2117 1175 2117 1180 2117 1228"/></Shape>
+            <String CONTENT="ما اصواقه وله الى ابات بالقا لمه اوفف عوف به ركه ابسه فده وب"
+                    HPOS="2117"
+                    VPOS="1147"
+                    WIDTH="1357"
+                    HEIGHT="81"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_c14c071a"
+                    TAGREFS="LT1"
+                    BASELINE="2467 1266 3472 1253" 
+                    HPOS="2467"
+                    VPOS="1231"
+                    WIDTH="1005"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="2467 1314 2867 1319 2892 1301 2993 1314 3018 1299 3064 1316 3139 1296 3263 1314 3283 1293 3333 1311 3469 1293 3472 1253 3469 1248 3303 1238 3217 1253 3109 1231 3089 1248 2943 1233 2890 1256 2814 1241 2777 1258 2756 1238 2721 1258 2668 1243 2467 1261 2467 1266 2467 1314"/></Shape>
+            <String CONTENT="من بحاء سسف كلام وصاحابهم وثرح بهم وعطاهم"
+                    HPOS="2467"
+                    VPOS="1231"
+                    WIDTH="1005"
+                    HEIGHT="88"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="2018"
+                   VPOS="660"
+                   WIDTH="86"
+                   HEIGHT="333"
+                   ID="eSc_textblock_956069b0"
+                   TAGREFS="BT1063">
+          <Shape><Polygon POINTS="2018 660 2018 993 2104 993 2104 660"/></Shape>
+          <TextLine ID="eSc_line_ebdb9c53"
+                    TAGREFS="LT220"
+                    BASELINE="2062 696 2078 978" 
+                    HPOS="2034"
+                    VPOS="692"
+                    WIDTH="63"
+                    HEIGHT="284">
+            <Shape><Polygon POINTS="2034 694 2054 976 2077 976 2097 974 2094 692 2059 694 2034 694"/></Shape>
+            <String CONTENT="سعن  مسعه"
+                    HPOS="2034"
+                    VPOS="692"
+                    WIDTH="63"
+                    HEIGHT="284"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="300"
+                   VPOS="151"
+                   WIDTH="1567"
+                   HEIGHT="242"
+                   ID="eSc_textblock_76b4ba3e"
+                   TAGREFS="BT1063">
+          <Shape><Polygon POINTS="600 366 446 362 436 284 300 271 300 165 333 171 1835 151 1867 365 1309 393 854 364"/></Shape>
+          <TextLine ID="eSc_line_b8cebf5a"
+                    TAGREFS="LT222"
+                    BASELINE="1490 358 1497 156" 
+                    HPOS="1452"
+                    VPOS="151"
+                    WIDTH="71"
+                    HEIGHT="206">
+            <Shape><Polygon POINTS="1480 153 1452 166 1452 271 1470 312 1488 357 1523 357 1515 153 1495 153 1452 151 1452 151 1480 153"/></Shape>
+            <String CONTENT="اللا يبعلنن"
+                    HPOS="1452"
+                    VPOS="151"
+                    WIDTH="71"
+                    HEIGHT="206"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_ae8e0b90"
+                    TAGREFS="LT222"
+                    BASELINE="1429 374 1431 159" 
+                    HPOS="1389"
+                    VPOS="158"
+                    WIDTH="73"
+                    HEIGHT="214">
+            <Shape><Polygon POINTS="1430 158 1402 193 1389 324 1404 370 1427 372 1462 370 1450 158 1430 158"/></Shape>
+            <String CONTENT="م وعظمائهم"
+                    HPOS="1389"
+                    VPOS="158"
+                    WIDTH="73"
+                    HEIGHT="214"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_94ad3d6b"
+                    TAGREFS="LT222"
+                    BASELINE="1559 320 1548 161" 
+                    HPOS="1525"
+                    VPOS="156"
+                    WIDTH="46"
+                    HEIGHT="163">
+            <Shape><Polygon POINTS="1545 158 1538 163 1525 226 1548 309 1558 319 1571 317 1558 156 1545 158"/></Shape>
+            <String CONTENT="ممعه"
+                    HPOS="1525"
+                    VPOS="156"
+                    WIDTH="46"
+                    HEIGHT="163"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_fb8e98eb"
+                    TAGREFS="LT222"
+                    BASELINE="997 351 1017 161" 
+                    HPOS="989"
+                    VPOS="158"
+                    WIDTH="43"
+                    HEIGHT="191">
+            <Shape><Polygon POINTS="1014 158 994 186 989 344 994 349 1024 349 1032 158 1014 158"/></Shape>
+            <String CONTENT="سنا موهه"
+                    HPOS="989"
+                    VPOS="158"
+                    WIDTH="43"
+                    HEIGHT="191"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_5c7df70d"
+                    TAGREFS="LT222"
+                    BASELINE="1296 374 1308 164" 
+                    HPOS="1266"
+                    VPOS="163"
+                    WIDTH="73"
+                    HEIGHT="212">
+            <Shape><Polygon POINTS="1339 375 1319 163 1306 163 1294 171 1266 370 1294 372 1339 375"/></Shape>
+            <String CONTENT="يعر ربيع "
+                    HPOS="1266"
+                    VPOS="163"
+                    WIDTH="73"
+                    HEIGHT="212"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_3d12a0ca"
+                    TAGREFS="LT222"
+                    BASELINE="1244 343 1244 164" 
+                    HPOS="1193"
+                    VPOS="163"
+                    WIDTH="65"
+                    HEIGHT="179">
+            <Shape><Polygon POINTS="1243 163 1193 193 1228 259 1233 332 1243 342 1256 339 1258 163 1243 163"/></Shape>
+            <String CONTENT="بهاع م"
+                    HPOS="1193"
+                    VPOS="163"
+                    WIDTH="65"
+                    HEIGHT="179"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_5de2dc1c"
+                    TAGREFS="LT222"
+                    BASELINE="1175 348 1178 164" 
+                    HPOS="1155"
+                    VPOS="163"
+                    WIDTH="56"
+                    HEIGHT="184">
+            <Shape><Polygon POINTS="1175 163 1170 163 1155 231 1168 344 1173 347 1211 347 1200 163 1175 163"/></Shape>
+            <String CONTENT="الحوحام"
+                    HPOS="1155"
+                    VPOS="163"
+                    WIDTH="56"
+                    HEIGHT="184"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_46033cb5"
+                    TAGREFS="LT222"
+                    BASELINE="639 348 645 164" 
+                    HPOS="604"
+                    VPOS="161"
+                    WIDTH="65"
+                    HEIGHT="186">
+            <Shape><Polygon POINTS="604 161 606 224 642 271 637 347 669 344 667 163 644 163 609 161 604 161"/></Shape>
+            <String CONTENT="دار الم"
+                    HPOS="604"
+                    VPOS="161"
+                    WIDTH="65"
+                    HEIGHT="186"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_f00aa9d6"
+                    TAGREFS="LT222"
+                    BASELINE="1789 357 1771 167" 
+                    HPOS="1742"
+                    VPOS="163"
+                    WIDTH="73"
+                    HEIGHT="191">
+            <Shape><Polygon POINTS="1770 166 1754 176 1742 231 1770 324 1787 354 1810 352 1815 249 1782 163 1770 166"/></Shape>
+            <String CONTENT="معابة صقا"
+                    HPOS="1742"
+                    VPOS="163"
+                    WIDTH="73"
+                    HEIGHT="191"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_735e04a2"
+                    TAGREFS="LT222"
+                    BASELINE="945 348 953 167" 
+                    HPOS="896"
+                    VPOS="166"
+                    WIDTH="90"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="969 347 986 224 974 166 951 166 896 166 913 234 896 254 931 294 931 324 944 347 969 347"/></Shape>
+            <String CONTENT="الحر عار"
+                    HPOS="896"
+                    VPOS="166"
+                    WIDTH="90"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_ad828f31"
+                    TAGREFS="LT222"
+                    BASELINE="472 354 472 167" 
+                    HPOS="380"
+                    VPOS="166"
+                    WIDTH="116"
+                    HEIGHT="186">
+            <Shape><Polygon POINTS="425 176 425 201 428 226 428 251 412 266 420 286 440 302 440 324 470 352 496 352 496 168 470 166 380 168 380 171 425 176"/></Shape>
+            <String CONTENT="ما يبغ وور"
+                    HPOS="380"
+                    VPOS="166"
+                    WIDTH="116"
+                    HEIGHT="186"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d195f242"
+                    TAGREFS="LT222"
+                    BASELINE="429 262 423 167" 
+                    HPOS="357"
+                    VPOS="166"
+                    WIDTH="88"
+                    HEIGHT="95">
+            <Shape><Polygon POINTS="372 186 370 196 382 216 367 261 428 261 445 259 428 166 422 166 357 176 360 181 372 186"/></Shape>
+            <String CONTENT="صطرب"
+                    HPOS="357"
+                    VPOS="166"
+                    WIDTH="88"
+                    HEIGHT="95"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_6b9936bf"
+                    TAGREFS="LT222"
+                    BASELINE="305 256 311 167" 
+                    HPOS="302"
+                    VPOS="166"
+                    WIDTH="25"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="304 254 327 254 314 166 309 166 307 166 302 251 304 254"/></Shape>
+            <String CONTENT="مسن د"
+                    HPOS="302"
+                    VPOS="166"
+                    WIDTH="25"
+                    HEIGHT="88"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_04c48136"
+                    TAGREFS="LT222"
+                    BASELINE="1733 353 1716 168" 
+                    HPOS="1686"
+                    VPOS="163"
+                    WIDTH="66"
+                    HEIGHT="189">
+            <Shape><Polygon POINTS="1704 166 1686 196 1691 264 1717 292 1724 347 1732 352 1752 347 1729 163 1714 166"/></Shape>
+            <String CONTENT="سميح  تقب"
+                    HPOS="1686"
+                    VPOS="163"
+                    WIDTH="66"
+                    HEIGHT="189"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_0adee251"
+                    TAGREFS="LT222"
+                    BASELINE="1679 355 1655 169" 
+                    HPOS="1629"
+                    VPOS="163"
+                    WIDTH="75"
+                    HEIGHT="191">
+            <Shape><Polygon POINTS="1654 168 1646 171 1629 244 1661 286 1669 349 1676 354 1704 349 1681 163 1654 168"/></Shape>
+            <String CONTENT="نة
+ ومات ف"
+                    HPOS="1629"
+                    VPOS="163"
+                    WIDTH="75"
+                    HEIGHT="191"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_fa6d96ff"
+                    TAGREFS="LT222"
+                    BASELINE="1613 358 1602 169" 
+                    HPOS="1571"
+                    VPOS="166"
+                    WIDTH="65"
+                    HEIGHT="191">
+            <Shape><Polygon POINTS="1601 168 1588 176 1571 211 1596 329 1611 357 1631 354 1636 266 1611 166 1601 168"/></Shape>
+            <String CONTENT="ما بع ماموم"
+                    HPOS="1571"
+                    VPOS="166"
+                    WIDTH="65"
+                    HEIGHT="191"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_579dba89"
+                    TAGREFS="LT222"
+                    BASELINE="1373 349 1363 169" 
+                    HPOS="1319"
+                    VPOS="166"
+                    WIDTH="75"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="1362 168 1319 188 1359 329 1372 347 1394 344 1372 166 1362 168"/></Shape>
+            <String CONTENT="سعما مدهر"
+                    HPOS="1319"
+                    VPOS="166"
+                    WIDTH="75"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_1192d077"
+                    TAGREFS="LT222"
+                    BASELINE="573 357 579 170" 
+                    HPOS="496"
+                    VPOS="166"
+                    WIDTH="103"
+                    HEIGHT="188">
+            <Shape><Polygon POINTS="548 168 548 224 523 259 523 276 521 302 521 327 496 337 496 342 571 354 599 354 594 168 576 168 556 166 548 168"/></Shape>
+            <String CONTENT="ستقرديماين"
+                    HPOS="496"
+                    VPOS="166"
+                    WIDTH="103"
+                    HEIGHT="188"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d49b504d"
+                    TAGREFS="LT222"
+                    BASELINE="1120 354 1117 173" 
+                    HPOS="1080"
+                    VPOS="171"
+                    WIDTH="70"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="1080 196 1105 327 1117 352 1150 349 1138 171 1115 171 1080 196"/></Shape>
+            <String CONTENT="م اوم لبق"
+                    HPOS="1080"
+                    VPOS="171"
+                    WIDTH="70"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_0f522855"
+                    TAGREFS="LT222"
+                    BASELINE="1045 354 1069 176" 
+                    HPOS="1037"
+                    VPOS="173"
+                    WIDTH="55"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="1044 352 1080 354 1092 271 1077 176 1067 173 1062 173 1037 266 1037 349 1044 352"/></Shape>
+            <String CONTENT="كمقه سبع"
+                    HPOS="1037"
+                    VPOS="173"
+                    WIDTH="55"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_33ab2e93"
+                    TAGREFS="LT222"
+                    BASELINE="884 357 884 176" 
+                    HPOS="848"
+                    VPOS="173"
+                    WIDTH="53"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="901 354 896 173 883 173 866 178 848 297 866 342 883 354 901 354"/></Shape>
+            <String CONTENT="مع لرم و"
+                    HPOS="848"
+                    VPOS="173"
+                    WIDTH="53"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_864eff0b"
+                    TAGREFS="LT222"
+                    BASELINE="703 343 700 176" 
+                    HPOS="672"
+                    VPOS="173"
+                    WIDTH="48"
+                    HEIGHT="169">
+            <Shape><Polygon POINTS="694 173 697 211 672 246 679 294 702 342 720 339 707 173 699 173 694 173"/></Shape>
+            <String CONTENT="سلي وامع"
+                    HPOS="672"
+                    VPOS="173"
+                    WIDTH="48"
+                    HEIGHT="169"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_607a0612"
+                    TAGREFS="LT222"
+                    BASELINE="521 340 527 176" 
+                    HPOS="483"
+                    VPOS="173"
+                    WIDTH="65"
+                    HEIGHT="166">
+            <Shape><Polygon POINTS="531 339 548 281 541 173 526 173 483 183 511 332 518 339 531 339"/></Shape>
+            <String CONTENT="ع منه"
+                    HPOS="483"
+                    VPOS="173"
+                    WIDTH="65"
+                    HEIGHT="166"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d0252257"
+                    TAGREFS="LT222"
+                    BASELINE="815 348 812 179" 
+                    HPOS="775"
+                    VPOS="178"
+                    WIDTH="76"
+                    HEIGHT="169">
+            <Shape><Polygon POINTS="845 344 851 219 835 178 810 178 775 208 798 244 785 276 805 342 813 347 845 344"/></Shape>
+            <String CONTENT="المران صر"
+                    HPOS="775"
+                    VPOS="178"
+                    WIDTH="76"
+                    HEIGHT="169"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_289a3720"
+                    TAGREFS="LT222"
+                    BASELINE="363 268 374 179" 
+                    HPOS="319"
+                    VPOS="178"
+                    WIDTH="66"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="372 178 319 178 344 244 362 266 377 266 385 178 372 178"/></Shape>
+            <String CONTENT="هما مع"
+                    HPOS="319"
+                    VPOS="178"
+                    WIDTH="66"
+                    HEIGHT="88"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d39d5815"
+                    TAGREFS="LT222"
+                    BASELINE="760 343 760 181" 
+                    HPOS="702"
+                    VPOS="178"
+                    WIDTH="73"
+                    HEIGHT="164">
+            <Shape><Polygon POINTS="757 342 772 342 775 178 757 178 704 178 720 279 702 342 757 342"/></Shape>
+            <String CONTENT="لامه وام"
+                    HPOS="702"
+                    VPOS="178"
+                    WIDTH="73"
+                    HEIGHT="164"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="2112"
+                   VPOS="2081"
+                   WIDTH="1429"
+                   HEIGHT="443"
+                   ID="eSc_textblock_4ad532fe"
+                   TAGREFS="BT2">
+          <Shape><Polygon POINTS="2857 2095 3499 2081 3519 2323 3541 2503 3087 2519 2136 2524 2112 2114"/></Shape>
+          <TextLine ID="eSc_line_af83424b"
+                    TAGREFS="LT1"
+                    BASELINE="2170 2215 2983 2195 3341 2202 3507 2190" 
+                    HPOS="2165"
+                    VPOS="2097"
+                    WIDTH="1339"
+                    HEIGHT="181">
+            <Shape><Polygon POINTS="3499 2149 3487 2119 3212 2132 3172 2097 3079 2097 3016 2137 2877 2114 2847 2139 2661 2142 2603 2107 2495 2109 2457 2129 2394 2112 2165 2112 2167 2212 2167 2245 2223 2260 2308 2240 2371 2278 2439 2255 2459 2275 2553 2275 2593 2250 2663 2273 2704 2258 2769 2270 2809 2243 2855 2268 2925 2268 2968 2227 3096 2227 3200 2263 3230 2243 3308 2235 3341 2253 3373 2227 3411 2243 3502 2217 3504 2187 3502 2124 3499 2149"/></Shape>
+            <String CONTENT="بليا الحسى ام حبدار المصر فالارردكان"
+                    HPOS="2165"
+                    VPOS="2097"
+                    WIDTH="1339"
+                    HEIGHT="181"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d5a954be"
+                    TAGREFS="LT1"
+                    BASELINE="2137 2331 2837 2323 3502 2293" 
+                    HPOS="2137"
+                    VPOS="2268"
+                    WIDTH="1365"
+                    HEIGHT="146">
+            <Shape><Polygon POINTS="2137 2363 2273 2358 2391 2414 2457 2384 2507 2394 2553 2374 2575 2389 2608 2368 2658 2368 2701 2404 2875 2401 2938 2371 3036 2371 3084 2341 3142 2361 3190 2333 3346 2348 3383 2331 3406 2348 3434 2326 3502 2326 3502 2293 3499 2290 3358 2268 3149 2268 3074 2270 3049 2293 3008 2273 2963 2288 2900 2275 2777 2303 2744 2280 2683 2313 2500 2318 2412 2298 2313 2323 2147 2326 2137 2331 2137 2363"/></Shape>
+            <String CONTENT="سبارما مرضا حمر ريان لمل ما ين سعه وماب فالها"
+                    HPOS="2137"
+                    VPOS="2268"
+                    WIDTH="1365"
+                    HEIGHT="146"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_056f3daf"
+                    TAGREFS="LT1"
+                    BASELINE="2533 2429 3461 2401" 
+                    HPOS="2532"
+                    VPOS="2376"
+                    WIDTH="927"
+                    HEIGHT="121">
+            <Shape><Polygon POINTS="2532 2457 2648 2457 2681 2487 2701 2467 2777 2457 2840 2494 2968 2447 3044 2497 3071 2479 3205 2497 3288 2494 3318 2474 3346 2492 3421 2441 3459 2454 3459 2399 3456 2394 3280 2401 3217 2376 3157 2401 3033 2379 2915 2401 2865 2384 2779 2391 2731 2416 2688 2399 2643 2419 2532 2421 2532 2426 2532 2457"/></Shape>
+            <String CONTENT="الصام سن رارح"
+                    HPOS="2532"
+                    VPOS="2376"
+                    WIDTH="927"
+                    HEIGHT="121"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="517"
+                   VPOS="362"
+                   WIDTH="1334"
+                   HEIGHT="697"
+                   ID="eSc_textblock_ef87b1b1"
+                   TAGREFS="BT2">
+          <Shape><Polygon POINTS="517 362 1851 362 1851 1059 517 1059"/></Shape>
+          <TextLine ID="eSc_line_602ba272"
+                    TAGREFS="LT1"
+                    BASELINE="508 394 1865 390" 
+                    HPOS="506"
+                    VPOS="357"
+                    WIDTH="1357"
+                    HEIGHT="91">
+            <Shape><Polygon POINTS="506 430 591 427 647 448 745 427 853 448 911 427 984 445 1032 427 1054 448 1341 445 1404 425 1543 425 1596 445 1639 425 1860 440 1863 387 1845 377 1717 377 1686 357 1603 377 1571 357 1412 372 1314 357 1299 372 1231 362 1163 380 606 360 531 380 506 392 506 430"/></Shape>
+            <String CONTENT="مراء
+الطبلخاناه في أيام السعيد، مات في [المع"
+                    HPOS="506"
+                    VPOS="357"
+                    WIDTH="1357"
+                    HEIGHT="91"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_5bf7ee73"
+                    TAGREFS="LT1"
+                    BASELINE="1032 483 1868 478" 
+                    HPOS="1032"
+                    VPOS="460"
+                    WIDTH="836"
+                    HEIGHT="73">
+            <Shape><Polygon POINTS="1032 516 1092 533 1143 513 1211 533 1266 513 1301 531 1349 516 1372 533 1422 516 1490 531 1520 511 1629 531 1865 521 1868 478 1865 473 1671 460 1510 475 1447 460 1362 478 1168 463 1148 478 1032 478 1032 483 1032 516"/></Shape>
+            <String CONTENT="ترك بسيس سنة ثمان وسبعين
+"
+                    HPOS="1032"
+                    VPOS="460"
+                    WIDTH="836"
+                    HEIGHT="73"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_8c71890e"
+                    TAGREFS="LT1"
+                    BASELINE="508 663 1850 659" 
+                    HPOS="506"
+                    VPOS="626"
+                    WIDTH="1342"
+                    HEIGHT="91">
+            <Shape><Polygon POINTS="506 717 548 697 644 714 702 697 737 714 788 697 828 714 986 714 1014 697 1102 697 1133 714 1274 697 1294 712 1311 694 1377 712 1656 694 1696 712 1845 712 1848 657 1822 646 1659 626 1553 641 1455 626 1382 644 1341 626 1271 646 1218 626 1198 646 1153 629 1085 649 1049 631 934 644 871 629 833 649 762 649 737 629 717 646 561 649 506 662 506 717"/></Shape>
+            <String CONTENT="بلبان الرومي دوادار العلامة بعد 
+"
+                    HPOS="506"
+                    VPOS="626"
+                    WIDTH="1342"
+                    HEIGHT="91"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_7ac1df18"
+                    TAGREFS="LT1"
+                    BASELINE="1097 750 1845 750" 
+                    HPOS="1097"
+                    VPOS="725"
+                    WIDTH="748"
+                    HEIGHT="65">
+            <Shape><Polygon POINTS="1097 750 1097 785 1845 790 1845 750 1845 747 1669 732 1636 747 1581 725 1470 725 1404 747 1347 725 1306 747 1241 730 1097 747 1097 750"/></Shape>
+            <String CONTENT="مسب  مسته بماف وسبعيف ورمه"
+                    HPOS="1097"
+                    VPOS="725"
+                    WIDTH="748"
+                    HEIGHT="65"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_3e04d940"
+                    TAGREFS="LT1"
+                    BASELINE="508 842 1840 833" 
+                    HPOS="506"
+                    VPOS="805"
+                    WIDTH="1331"
+                    HEIGHT="86">
+            <Shape><Polygon POINTS="506 876 835 891 863 871 929 888 1072 871 1092 888 1168 888 1218 868 1286 868 1311 886 1425 868 1480 886 1561 866 1646 883 1835 866 1837 830 1832 825 1691 808 1623 825 1601 805 1550 805 1523 823 1412 810 1394 828 1168 808 1122 825 1100 810 888 810 795 833 589 830 506 840 506 876"/></Shape>
+            <String CONTENT="مي الأمير سيف الدين
+"
+                    HPOS="506"
+                    VPOS="805"
+                    WIDTH="1331"
+                    HEIGHT="86"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_6e29cad2"
+                    TAGREFS="LT1"
+                    BASELINE="508 945 1855 921" 
+                    HPOS="506"
+                    VPOS="893"
+                    WIDTH="1347"
+                    HEIGHT="101">
+            <Shape><Polygon POINTS="506 979 631 991 775 974 840 994 941 969 1165 994 1258 971 1314 991 1850 954 1853 918 1764 908 1523 911 1498 893 1379 911 1339 896 1233 918 1180 903 1160 921 1092 903 918 903 858 926 775 906 692 928 647 908 546 931 506 944 506 979"/></Shape>
+            <String CONTENT="العلامة لا غير مع القاضي فتح الدين
+"
+                    HPOS="506"
+                    VPOS="893"
+                    WIDTH="1347"
+                    HEIGHT="101"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_ddf31de7"
+                    TAGREFS="LT1"
+                    BASELINE="1226 1014 1848 1004" 
+                    HPOS="1226"
+                    VPOS="999"
+                    WIDTH="622"
+                    HEIGHT="73">
+            <Shape><Polygon POINTS="1226 1072 1377 1072 1397 1049 1467 1069 1561 1047 1651 1047 1684 1067 1764 1044 1848 1049 1848 1004 1845 999 1226 1009 1226 1014 1226 1072"/></Shape>
+            <String CONTENT="ك معمنه مقصبع وسعر وميه"
+                    HPOS="1226"
+                    VPOS="999"
+                    WIDTH="622"
+                    HEIGHT="73"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="477"
+                   VPOS="1320"
+                   WIDTH="1376"
+                   HEIGHT="1348"
+                   ID="eSc_textblock_69b25b1f"
+                   TAGREFS="BT2">
+          <Shape><Polygon POINTS="1367 2645 523 2605 483 2565 477 2343 533 2324 529 2257 535 2136 494 1983 517 1320 1851 1320 1851 1422 1853 1422 1853 1742 1843 1750 1848 2665 1372 2668"/></Shape>
+          <TextLine ID="eSc_line_a345984b"
+                    TAGREFS="LT1"
+                    BASELINE="523 1381 1024 1369 1837 1367" 
+                    HPOS="521"
+                    VPOS="1326"
+                    WIDTH="1314"
+                    HEIGHT="101">
+            <Shape><Polygon POINTS="521 1407 556 1427 694 1427 715 1407 760 1407 793 1427 856 1404 903 1422 929 1404 1039 1404 1065 1424 1150 1402 1175 1422 1314 1404 1344 1417 1367 1399 1399 1419 1621 1397 1835 1404 1835 1364 1802 1349 1616 1326 1563 1344 1543 1329 1387 1329 1341 1349 1203 1331 1085 1339 1062 1356 913 1339 871 1356 788 1341 765 1359 702 1344 574 1359 521 1379 521 1407"/></Shape>
+            <String CONTENT="بلباف الوممحابا ير سيف الدبل دوادار الظاصرييه اسفسهدى"
+                    HPOS="521"
+                    VPOS="1326"
+                    WIDTH="1314"
+                    HEIGHT="101"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_559ce423"
+                    TAGREFS="LT1"
+                    BASELINE="523 1464 1832 1442" 
+                    HPOS="521"
+                    VPOS="1434"
+                    WIDTH="1309"
+                    HEIGHT="73">
+            <Shape><Polygon POINTS="521 1490 581 1507 631 1490 762 1505 813 1485 863 1502 1019 1500 1042 1485 1087 1500 1138 1482 1160 1497 1326 1480 1392 1495 1455 1477 1535 1492 1573 1475 1709 1487 1830 1467 1830 1440 1827 1434 521 1457 521 1462 521 1490"/></Shape>
+            <String CONTENT="ف مرش العما وبلام مع عم شكس سفه م مور مع امب رح"
+                    HPOS="521"
+                    VPOS="1434"
+                    WIDTH="1309"
+                    HEIGHT="73"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_363457f8"
+                    TAGREFS="LT1"
+                    BASELINE="523 1542 1837 1525" 
+                    HPOS="521"
+                    VPOS="1500"
+                    WIDTH="1314"
+                    HEIGHT="93">
+            <Shape><Polygon POINTS="521 1578 543 1593 710 1575 888 1591 911 1570 1143 1568 1195 1586 1228 1568 1404 1565 1457 1583 1674 1560 1835 1575 1835 1523 1830 1518 1508 1518 1480 1502 1425 1518 1357 1500 1316 1523 1221 1502 1180 1523 1082 1502 986 1520 873 1507 808 1530 720 1510 699 1533 654 1518 541 1533 521 1540 521 1578"/></Shape>
+            <String CONTENT="بليسانا كعلاى اجد الماييف البحرة الصابحية الايرسرف العر ويصرف"
+                    HPOS="521"
+                    VPOS="1500"
+                    WIDTH="1314"
+                    HEIGHT="93"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_51de63a5"
+                    TAGREFS="LT1"
+                    BASELINE="523 1632 1848 1611" 
+                    HPOS="521"
+                    VPOS="1583"
+                    WIDTH="1324"
+                    HEIGHT="101">
+            <Shape><Polygon POINTS="521 1684 634 1684 687 1664 732 1681 881 1679 911 1661 939 1679 989 1661 1022 1676 1117 1656 1195 1674 1268 1659 1296 1671 1326 1653 1367 1671 1500 1651 1520 1666 1583 1648 1691 1664 1780 1648 1797 1664 1845 1643 1845 1608 1795 1601 1548 1606 1460 1586 1422 1606 1382 1583 1314 1608 1258 1583 1150 1598 964 1588 916 1616 785 1593 687 1608 611 1596 531 1621 521 1631 521 1684"/></Shape>
+            <String CONTENT="يفور انفه كرثم تر فى م انجدم الى انحبا ومر اموام م كابل كدر النصو"
+                    HPOS="521"
+                    VPOS="1583"
+                    WIDTH="1324"
+                    HEIGHT="101"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_8adf8d41"
+                    TAGREFS="LT1"
+                    BASELINE="523 1733 1841 1709" 
+                    HPOS="521"
+                    VPOS="1691"
+                    WIDTH="1319"
+                    HEIGHT="93">
+            <Shape><Polygon POINTS="521 1767 637 1784 677 1762 783 1782 853 1759 941 1777 989 1759 1039 1777 1117 1754 1178 1774 1369 1749 1467 1767 1498 1747 1543 1759 1576 1744 1681 1764 1840 1739 1840 1706 1837 1701 1561 1694 1518 1709 1495 1691 1407 1709 1352 1694 1221 1714 1095 1699 1019 1719 999 1701 913 1701 858 1721 783 1704 730 1721 521 1727 521 1732 521 1767"/></Shape>
+            <String CONTENT="علا وسبومه وترونه اواموض فانه حسوسه اسه وكا مت مور العلما"
+                    HPOS="521"
+                    VPOS="1691"
+                    WIDTH="1319"
+                    HEIGHT="93"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_bfa73570"
+                    TAGREFS="LT1"
+                    BASELINE="523 1826 604 1822 1841 1810" 
+                    HPOS="521"
+                    VPOS="1739"
+                    WIDTH="1319"
+                    HEIGHT="134">
+            <Shape><Polygon POINTS="1827 1802 1820 1782 1790 1769 1727 1787 1493 1787 1462 1772 1399 1787 1324 1779 1289 1754 1233 1777 1122 1757 1047 1764 1024 1747 959 1762 851 1739 606 1742 521 1825 521 1865 571 1852 594 1873 621 1855 647 1873 752 1857 866 1870 908 1852 981 1870 1080 1850 1163 1867 1286 1845 1326 1865 1379 1847 1488 1865 1520 1850 1674 1860 1732 1840 1837 1840 1840 1807 1835 1802 1827 1802"/></Shape>
+            <String CONTENT="سا وسرعسب طهابلا خو سنه سبع ويمانين وسرية ووفرب الفوافة"
+                    HPOS="521"
+                    VPOS="1739"
+                    WIDTH="1319"
+                    HEIGHT="134"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_8f0a1d09"
+                    TAGREFS="LT1"
+                    BASELINE="523 1916 1841 1901" 
+                    HPOS="521"
+                    VPOS="1875"
+                    WIDTH="1319"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="521 1946 654 1943 694 1963 747 1948 1072 1958 1138 1940 1394 1956 1493 1953 1515 1933 1613 1951 1664 1930 1689 1951 1837 1930 1840 1900 1837 1895 1498 1900 1445 1875 1324 1878 1258 1903 1178 1878 1077 1880 1047 1900 974 1880 521 1910 521 1915 521 1946"/></Shape>
+            <String CONTENT="ومكمان كعسا فى اط ير سبف الدن خد الما لبك المنصورية وام"
+                    HPOS="521"
+                    VPOS="1875"
+                    WIDTH="1319"
+                    HEIGHT="88"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_00b1df32"
+                    TAGREFS="LT1"
+                    BASELINE="521 1986 625 2005 1679 1988 1841 1994" 
+                    HPOS="518"
+                    VPOS="1953"
+                    WIDTH="1322"
+                    HEIGHT="101">
+            <Shape><Polygon POINTS="518 2049 760 2031 883 2054 934 2031 976 2051 1057 2051 1122 2024 1165 2046 1301 2021 1367 2046 1518 2031 1659 2044 1727 2016 1837 2016 1840 1993 1820 1973 1666 1953 1646 1976 1520 1956 1460 1978 1407 1958 1304 1958 1135 1981 1057 1963 1039 1981 1014 1963 876 1968 853 1986 780 1966 697 1988 649 1971 609 1988 518 1978 518 1983 518 2049"/></Shape>
+            <String CONTENT="تملمه بامنه ثم ولاه ببابه السا طنه بحصن الا كراد وكامعه من العنو"
+                    HPOS="518"
+                    VPOS="1953"
+                    WIDTH="1322"
+                    HEIGHT="101"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_c8ee0f52"
+                    TAGREFS="LT1"
+                    BASELINE="523 2081 697 2089 1841 2080" 
+                    HPOS="521"
+                    VPOS="2061"
+                    WIDTH="1319"
+                    HEIGHT="66">
+            <Shape><Polygon POINTS="521 2127 1837 2124 1840 2079 1837 2076 1591 2061 1520 2076 1462 2061 1435 2079 1407 2064 1362 2079 1339 2064 1314 2079 1216 2064 976 2081 929 2066 876 2081 861 2066 838 2081 742 2066 521 2074 521 2079 521 2127"/></Shape>
+            <String CONTENT="ى العرن مف ف الصعفة سبنه ماف ومنه معهر وس به بم ولان االابعرف"
+                    HPOS="521"
+                    VPOS="2061"
+                    WIDTH="1319"
+                    HEIGHT="66"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_2ca5942f"
+                    TAGREFS="LT1"
+                    BASELINE="526 2170 1815 2157" 
+                    HPOS="526"
+                    VPOS="2137"
+                    WIDTH="1289"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="526 2207 619 2225 639 2207 908 2222 944 2202 966 2222 1039 2222 1122 2202 1170 2220 1296 2220 1392 2217 1414 2197 1608 2195 1659 2212 1679 2195 1815 2200 1815 2157 1810 2152 1296 2137 1274 2160 1122 2139 1095 2160 1072 2139 994 2162 896 2142 871 2160 843 2144 825 2162 526 2165 526 2170 526 2207"/></Shape>
+            <String CONTENT="بالمسالب الفاخم كنا لا يرسيف الرين يفيص الجفس رباممصرمو"
+                    HPOS="526"
+                    VPOS="2137"
+                    WIDTH="1289"
+                    HEIGHT="88"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_ca511628"
+                    TAGREFS="LT1"
+                    BASELINE="531 2268 1841 2242" 
+                    HPOS="528"
+                    VPOS="2222"
+                    WIDTH="1312"
+                    HEIGHT="91">
+            <Shape><Polygon POINTS="528 2306 574 2313 634 2288 652 2303 692 2290 712 2311 959 2306 1022 2293 1054 2265 1359 2260 1382 2283 1465 2295 1566 2295 1634 2270 1664 2293 1707 2293 1764 2265 1807 2283 1840 2265 1840 2240 1837 2222 1659 2225 1629 2243 1445 2227 1402 2248 1344 2233 1306 2250 1241 2235 1165 2253 546 2260 528 2265 528 2306"/></Shape>
+            <String CONTENT=" مرااح عسم وبيع الات س وسىايه وكا فنه خدرامن"
+                    HPOS="528"
+                    VPOS="2222"
+                    WIDTH="1312"
+                    HEIGHT="91"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_9acd7abf"
+                    TAGREFS="LT1"
+                    BASELINE="488 2368 1841 2327" 
+                    HPOS="485"
+                    VPOS="2298"
+                    WIDTH="1355"
+                    HEIGHT="116">
+            <Shape><Polygon POINTS="485 2391 558 2391 596 2414 657 2394 710 2411 740 2394 775 2409 893 2386 921 2404 999 2389 1314 2394 1435 2363 1540 2379 1576 2361 1702 2379 1759 2356 1840 2366 1840 2326 1827 2298 1659 2303 1631 2326 1611 2306 1465 2308 1414 2326 1291 2316 1208 2341 1143 2323 1075 2343 1009 2331 954 2348 485 2361 485 2366 485 2391"/></Shape>
+            <String CONTENT="الططلحاناه فابع رامرته بملا اهوام سيف الدت بكتمم الحسبباى طر مطاب"
+                    HPOS="485"
+                    VPOS="2298"
+                    WIDTH="1355"
+                    HEIGHT="116"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_d4110a8d"
+                    TAGREFS="LT1"
+                    BASELINE="528 2431 1223 2436 1841 2418" 
+                    HPOS="526"
+                    VPOS="2411"
+                    WIDTH="1314"
+                    HEIGHT="78">
+            <Shape><Polygon POINTS="526 2469 652 2489 770 2489 820 2467 896 2487 1034 2487 1092 2472 1206 2484 1263 2462 1304 2479 1334 2462 1427 2474 1452 2459 1618 2459 1664 2474 1722 2457 1749 2474 1840 2457 1840 2416 1830 2411 558 2421 526 2429 526 2469"/></Shape>
+            <String CONTENT="اببن اشر العا كان مبله امن كشعه واسره معا به الخمسطمبرس مما"
+                    HPOS="526"
+                    VPOS="2411"
+                    WIDTH="1314"
+                    HEIGHT="78"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_46408470"
+                    TAGREFS="LT1"
+                    BASELINE="546 2525 1105 2527 1841 2511" 
+                    HPOS="543"
+                    VPOS="2492"
+                    WIDTH="1297"
+                    HEIGHT="101">
+            <Shape><Polygon POINTS="543 2582 629 2593 652 2575 732 2572 770 2587 835 2567 896 2590 986 2590 1077 2565 1107 2587 1231 2585 1246 2567 1266 2585 1299 2567 1352 2585 1392 2560 1430 2575 1465 2555 1626 2570 1714 2552 1764 2570 1782 2552 1837 2552 1840 2509 1837 2507 1644 2494 1555 2509 1503 2492 1455 2509 1427 2492 1311 2507 1213 2494 1180 2514 1095 2497 1039 2514 901 2499 823 2517 780 2499 752 2520 546 2517 543 2522 543 2582"/></Shape>
+            <String CONTENT="لسال ابحا عفبكر اعم علييه الكه الهاصر محهر علا وما معه ى تعنوب"
+                    HPOS="543"
+                    VPOS="2492"
+                    WIDTH="1297"
+                    HEIGHT="101"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_e9de9933"
+                    TAGREFS="LT1"
+                    BASELINE="1427 2621 1840 2592" 
+                    HPOS="1425"
+                    VPOS="2525"
+                    WIDTH="412"
+                    HEIGHT="133">
+            <Shape><Polygon POINTS="1832 2565 1737 2572 1699 2552 1656 2565 1543 2545 1520 2525 1452 2530 1425 2620 1427 2648 1493 2658 1563 2630 1631 2648 1702 2620 1837 2620 1837 2590 1835 2572 1832 2565"/></Shape>
+            <String CONTENT="سبعه تسبع وسبع ايه"
+                    HPOS="1425"
+                    VPOS="2525"
+                    WIDTH="412"
+                    HEIGHT="133"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="1823"
+                   VPOS="1806"
+                   WIDTH="166"
+                   HEIGHT="1110"
+                   ID="eSc_textblock_75c32e31"
+                   TAGREFS="BT1063">
+          <Shape><Polygon POINTS="1968 1815 1989 2174 1971 2916 1932 2907 1827 2736 1833 2681 1840 2180 1823 1806"/></Shape>
+          <TextLine ID="eSc_line_697c27b6"
+                    TAGREFS="LT222"
+                    BASELINE="1863 2753 1879 2290 1855 1858" 
+                    HPOS="1825"
+                    VPOS="1857"
+                    WIDTH="80"
+                    HEIGHT="894">
+            <Shape><Polygon POINTS="1825 1857 1827 1870 1827 1895 1827 1920 1830 1946 1830 1971 1832 1996 1832 2021 1832 2046 1835 2071 1835 2076 1843 2084 1837 2313 1840 2323 1837 2336 1837 2416 1837 2424 1835 2424 1835 2582 1835 2600 1835 2625 1835 2650 1835 2676 1832 2681 1832 2739 1837 2751 1860 2751 1900 2749 1888 2660 1905 2635 1905 2527 1890 2472 1905 2447 1883 2416 1903 2368 1903 2225 1885 2177 1900 2109 1880 2046 1898 2008 1878 1973 1878 1857 1853 1857 1825 1857"/></Shape>
+            <String CONTENT="كماف مهوكا للحاج ام من اخوان سلاوفلا ومرباه صعرا"
+                    HPOS="1825"
+                    VPOS="1857"
+                    WIDTH="80"
+                    HEIGHT="894"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_b0ea6f37"
+                    BASELINE="1924 2869 1921 1866" 
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="65"
+                    HEIGHT="1002">
+            <Shape><Polygon POINTS="1916 1865 1918 2842 1923 2867 1956 2864 1981 2796 1981 2706 1956 2633 1978 2547 1961 2489 1981 2368 1966 2238 1978 2175 1961 2147 1978 2024 1953 1986 1951 1865 1916 1865"/></Shape>
+            <String CONTENT="التت اذالب كلا لمنةنما مد ومه عمو اق"
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="65"
+                    HEIGHT="1002"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_14c42785"
+                    BASELINE="1924 2869 1922 2310 1921 1866" 
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="65"
+                    HEIGHT="1002">
+            <Shape><Polygon POINTS="1918 2389 1918 2414 1918 2439 1918 2464 1918 2489 1918 2514 1918 2540 1918 2565 1918 2590 1918 2615 1918 2640 1918 2666 1918 2691 1918 2716 1918 2741 1918 2766 1918 2791 1918 2817 1918 2842 1921 2867 1923 2867 1956 2864 1981 2796 1981 2703 1956 2633 1978 2547 1961 2489 1981 2361 1966 2238 1978 2175 1961 2147 1978 2024 1953 1986 1953 1865 1918 1865 1916 2374 1918 2389"/></Shape>
+            <String CONTENT="فر ال بلا فمها نه عما مو ومد عمو ال"
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="65"
+                    HEIGHT="1002"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_734bdc03"
+                    TAGREFS="LT222"
+                    BASELINE="1924 2869 1934 2301 1921 1866" 
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="62"
+                    HEIGHT="1002">
+            <Shape><Polygon POINTS="1921 1961 1923 2741 1918 2766 1918 2867 1953 2864 1978 2799 1978 2701 1956 2633 1973 2525 1958 2489 1976 2436 1978 2175 1961 2139 1978 2024 1953 1986 1953 1865 1918 1865 1916 1946 1921 1961"/></Shape>
+            <String CONTENT="ست فسل مس حه  ام لم ل يد كسو لمطلس"
+                    HPOS="1916"
+                    VPOS="1865"
+                    WIDTH="62"
+                    HEIGHT="1002"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="1468"
+                   VPOS="2704"
+                   WIDTH="455"
+                   HEIGHT="244"
+                   ID="eSc_textblock_5b0e1c3a"
+                   TAGREFS="BT1063">
+          <Shape><Polygon POINTS="1548 2948 1468 2738 1789 2704 1812 2706 1923 2912"/></Shape>
+          <TextLine ID="eSc_line_c25e536e"
+                    TAGREFS="LT220"
+                    BASELINE="1739 2715 1767 2759" 
+                    HPOS="1727"
+                    VPOS="2708"
+                    WIDTH="53"
+                    HEIGHT="53">
+            <Shape><Polygon POINTS="1744 2708 1737 2713 1727 2718 1752 2761 1764 2756 1780 2741 1752 2711 1744 2708"/></Shape>
+            <String CONTENT="عسب"
+                    HPOS="1727"
+                    VPOS="2708"
+                    WIDTH="53"
+                    HEIGHT="53"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_0a87bcd1"
+                    TAGREFS="LT220"
+                    BASELINE="1776 2717 1876 2902" 
+                    HPOS="1757"
+                    VPOS="2706"
+                    WIDTH="143"
+                    HEIGHT="204">
+            <Shape><Polygon POINTS="1775 2716 1757 2723 1853 2910 1875 2900 1900 2882 1792 2706 1775 2716"/></Shape>
+            <String CONTENT="ا مسو منه"
+                    HPOS="1757"
+                    VPOS="2706"
+                    WIDTH="143"
+                    HEIGHT="204"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_961ae243"
+                    TAGREFS="LT220"
+                    BASELINE="1718 2721 1810 2926" 
+                    HPOS="1699"
+                    VPOS="2711"
+                    WIDTH="121"
+                    HEIGHT="221">
+            <Shape><Polygon POINTS="1820 2912 1820 2862 1729 2711 1717 2718 1699 2726 1699 2759 1722 2774 1727 2822 1785 2932 1807 2925 1810 2922 1820 2912"/></Shape>
+            <String CONTENT="ولاور معلابهان"
+                    HPOS="1699"
+                    VPOS="2711"
+                    WIDTH="121"
+                    HEIGHT="221"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_b658103f"
+                    TAGREFS="LT220"
+                    BASELINE="1658 2727 1741 2924" 
+                    HPOS="1634"
+                    VPOS="2716"
+                    WIDTH="108"
+                    HEIGHT="219">
+            <Shape><Polygon POINTS="1676 2716 1656 2726 1634 2734 1644 2801 1707 2935 1739 2922 1742 2917 1704 2819 1714 2784 1679 2716 1676 2716"/></Shape>
+            <String CONTENT="زان إلى الشام"
+                    HPOS="1634"
+                    VPOS="2716"
+                    WIDTH="108"
+                    HEIGHT="219"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_84204e95"
+                    TAGREFS="LT220"
+                    BASELINE="1581 2729 1667 2932" 
+                    HPOS="1545"
+                    VPOS="2723"
+                    WIDTH="159"
+                    HEIGHT="212">
+            <Shape><Polygon POINTS="1586 2723 1578 2728 1545 2741 1588 2794 1598 2867 1649 2935 1666 2930 1704 2882 1641 2809 1644 2769 1603 2723 1586 2723"/></Shape>
+            <String CONTENT="في حد مفهالى"
+                    HPOS="1545"
+                    VPOS="2723"
+                    WIDTH="159"
+                    HEIGHT="212"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_9d03cced"
+                    TAGREFS="LT220"
+                    BASELINE="1513 2744 1607 2932" 
+                    HPOS="1480"
+                    VPOS="2731"
+                    WIDTH="166"
+                    HEIGHT="211">
+            <Shape><Polygon POINTS="1533 2731 1510 2741 1480 2754 1540 2839 1578 2942 1606 2930 1646 2905 1535 2731 1533 2731"/></Shape>
+            <String CONTENT="ان يساحاف"
+                    HPOS="1480"
+                    VPOS="2731"
+                    WIDTH="166"
+                    HEIGHT="211"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="181"
+                   VPOS="146"
+                   WIDTH="353"
+                   HEIGHT="1982"
+                   ID="eSc_textblock_43006c2f"
+                   TAGREFS="BT1063">
+          <Shape><Polygon POINTS="488 646 507 1011 511 1282 534 1993 534 2128 221 2081 181 292 185 146 289 164 289 271 284 271 427 292 437 359 505 360"/></Shape>
+          <TextLine ID="eSc_line_2576c05a"
+                    TAGREFS="LT220"
+                    BASELINE="241 156 253 929 311 2088" 
+                    HPOS="183"
+                    VPOS="151"
+                    WIDTH="126"
+                    HEIGHT="1936">
+            <Shape><Polygon POINTS="246 151 239 153 198 153 183 367 201 410 186 465 211 508 196 568 221 629 196 725 219 798 201 830 206 964 224 991 211 1107 239 1218 221 1356 244 1397 229 1445 246 1475 229 1535 259 1583 244 1669 264 1709 241 1749 269 1822 254 1842 271 1875 256 1948 279 2087 309 2087 292 1361 276 1329 284 1132 266 1059 281 1044 261 976 276 921 259 906 274 866 254 780 271 732 249 659 274 536 241 420 266 382 254 156 246 151"/></Shape>
+            <String CONTENT="  قسنه مسع فريع سنها من دص مح العهر ما تفاح اوابل تب منه الى ومف الالب لا يطف"
+                    HPOS="183"
+                    VPOS="151"
+                    WIDTH="126"
+                    HEIGHT="1936"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_187bff47"
+                    TAGREFS="LT220"
+                    BASELINE="385 284 451 2100" 
+                    HPOS="347"
+                    VPOS="281"
+                    WIDTH="143"
+                    HEIGHT="1818">
+            <Shape><Polygon POINTS="392 284 382 281 347 281 367 485 362 725 377 755 372 1001 387 1024 375 1082 395 1248 382 1291 407 1963 428 2099 450 2099 490 2097 443 1349 458 1326 440 1288 453 1243 430 989 445 931 425 866 435 770 420 750 433 707 412 548 430 503 410 407 425 347 405 292 392 284"/></Shape>
+            <String CONTENT="ولسا به فارس علهم مكتمر الجلمى فهجهوا رمضها واوقعع انا ربعه ألف منا العكر وملواكبرا منهم وعاكروابعناهم"
+                    HPOS="347"
+                    VPOS="281"
+                    WIDTH="143"
+                    HEIGHT="1818"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_78db1fc2"
+                    TAGREFS="LT220"
+                    BASELINE="307 280 389 2104" 
+                    HPOS="264"
+                    VPOS="276"
+                    WIDTH="171"
+                    HEIGHT="1826">
+            <Shape><Polygon POINTS="304 279 274 279 264 445 284 473 271 551 289 576 271 606 276 722 302 835 284 878 307 944 302 1273 322 1336 307 1384 332 1497 317 1545 337 1608 322 1681 342 1734 324 1767 339 1817 332 1935 355 2001 357 2102 387 2102 435 2046 415 1603 377 1296 390 1248 365 1137 377 1072 360 1049 370 959 355 886 370 853 349 828 344 709 372 669 347 621 334 475 357 420 332 367 347 317 324 276 304 279"/></Shape>
+            <String CONTENT="للما مدم عازارا لى السام حضر بوبه حمص وابلم فيها بلا تمطيى وعرمع البهومين الرمصوموم الارف"
+                    HPOS="264"
+                    VPOS="276"
+                    WIDTH="171"
+                    HEIGHT="1826"
+                    ></String>
+          </TextLine>
+          <TextLine ID="eSc_line_312d332a"
+                    TAGREFS="LT220"
+                    BASELINE="463 358 502 2108" 
+                    HPOS="438"
+                    VPOS="357"
+                    WIDTH="93"
+                    HEIGHT="1750">
+            <Shape><Polygon POINTS="531 2092 528 1940 518 1915 526 1890 521 1714 518 1686 506 1671 516 1633 516 1616 503 1591 513 1530 511 1500 498 1445 508 1407 508 1374 496 1336 503 1218 503 1107 488 1009 496 883 490 782 483 757 485 707 483 677 480 674 483 664 483 606 493 455 493 375 460 357 438 357 438 1007 458 1039 440 1064 458 1248 445 1311 465 1346 448 1404 465 1455 450 1543 470 1608 453 1628 473 1701 475 1867 460 1908 478 1951 480 2104 501 2107 531 2104 531 2092"/></Shape>
+            <String CONTENT="حلع السل بعابه قلب عوصا مفواسهرغ سوا لرسنة اسم وبص مسام الهاء وبع القم الم ماء ملعهالم"
+                    HPOS="438"
+                    VPOS="357"
+                    WIDTH="93"
+                    HEIGHT="1750"
+                    ></String>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
