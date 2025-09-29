@@ -9,8 +9,9 @@ from multiprocessing import Pool, cpu_count
 class mARkdownFile():
     """"Creates a python object from a openITI mARkdown file, which can then be parsed in
     various ways"""
-    def __init__ (self, file_path, header_pattern = ["### ", r"\|", " "], bio_patterns= [r"### \$+ ", "#~:section:"], report=True):
-        """Read the text into the object using a file"""
+    def __init__ (self, file_path, header_pattern = ["### ", r"\|", " "], bio_patterns= [r"### \$+ ", "#~:section:"], presplit_header_level=None, presplit_bio_level=None, report=True):
+        """Read the text into the object using a file. presplit level functions allow us to run a split once and retain it for future processing
+        Can perform it either for bios or headers - not both - if both set, will take the header by default"""
         
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"File {file_path} does not exist")
@@ -29,6 +30,16 @@ class mARkdownFile():
             print("Loaded text from:", file_path)
             print("Overall annotation statistics:")
             self.has_mARkdown()
+        
+        # If argument is supplied - create the presplits (to avoid excessive processing of the same data)
+        if presplit_header_level:
+            self.presplits = self.split_on_level(presplit_header_level, get_length=True)
+            print(f"Processed presplits on header level {presplit_header_level}")
+        elif presplit_bio_level:
+            self.presplits = self.split_on_level(presplit_bio_level, get_length=True, bio_header=True)
+            print(f"Processed presplits on biography level {presplit_bio_level}")
+        else:
+            self.presplits = None
 
     def has_mARkdown(self):
         """Produce a readout for the mARkdown - how many of each level"""
@@ -142,7 +153,7 @@ class mARkdownFile():
         """Return the section of the text where the header contains the regex
         if level is none - search all levels and split based on retrieved level
         If return_all is False, script will ask user to choose the desired header"""
-        if level is None:
+        if level is None and self.presplits:
             full_regex = self.header_contains_regex(regex, level=None, bio_header=bio_header)
             results = re.findall(full_regex, self.mARkdown_text)
             header = self._check_and_choose_header(results)
@@ -150,10 +161,13 @@ class mARkdownFile():
             level = self.get_level(header, bio_header=bio_header)
         
         # If a level is not already specified, we take level where result is found and split the whole text on that level - so we can return the split
-        splits = self.split_on_level(level, bio_header=bio_header, get_length=get_length)        
+        # If the object has been setup with a presplit it uses these internally to avoid us repeating the same split
+        if self.presplits:
+            splits = self.presplits
+        else:
+            splits = self.split_on_level(level, bio_header=bio_header, get_length=get_length)        
         matching_splits = []
         full_regex = self.header_contains_regex(regex, level=level, bio_header=bio_header)
-        print(full_regex)
         for split in splits:
             if len(re.findall(full_regex, split["header"])) > 0:
                 matching_splits.append(split)
@@ -175,7 +189,6 @@ class mARkdownFile():
         splits_out=[]        
         header_regex = self.build_header_tag(level, bio_header=bio_header)
         full_regex = rf"({header_regex}.*?\n)"
-        print(full_regex)
         splits = re.split(full_regex, text_in)
 
         first_match = True
