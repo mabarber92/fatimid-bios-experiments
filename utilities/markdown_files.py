@@ -66,7 +66,8 @@ class mARkdownFile():
             for header in unique_bio_headers:
                 print(f"Bio Header: {header} - Count: {bio_header_list.count(header)}")
 
-    
+    # TODO: Add function to retrieve milestone data as structured data for given retrieved heading
+
     def count_heading_type(self, level, split = None):
         """Count the number of headings of a certain type - if split is given, use just the supplied
         text split to count the headings of that type - otherwise use whole text"""
