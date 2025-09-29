@@ -150,13 +150,13 @@ class mARkdownFile():
 
 
 
-    def search_for_header(self, regex, level=None, bio_header=False, return_all=True, get_length=False, exact_match = False):
+    def search_for_header(self, regex, level=None, bio_header=False, return_all=True, get_length=False, exact_match = False, identify_ms=False):
         """Return the section of the text where the header contains the regex
         if level is none - search all levels and split based on retrieved level
         If return_all is False, script will ask user to choose the desired header
         If exact_match - then we do not construct a regex, we look for an exact match for the heading (to be used where you
         are feeding an output produced by this class back in to locate the headings and do further computation)"""
-        if level is None and self.presplits:
+        if level is None:
             full_regex = self.header_contains_regex(regex, level=None, bio_header=bio_header)
             results = re.findall(full_regex, self.mARkdown_text)
             header = self._check_and_choose_header(results)
@@ -169,6 +169,11 @@ class mARkdownFile():
             splits = self.presplits
         else:
             splits = self.split_on_level(level, bio_header=bio_header, get_length=get_length)        
+        
+        # To avoid doing this high-compute approach - need to have permanent split ids that we store and reference - REFACTOR LATER
+        if identify_ms:
+            splits = self.add_ms_to_splits(splits)
+
         matching_splits = []
         
         # If we are not matching the regex exactly, we create a specialist regex
@@ -179,6 +184,7 @@ class mARkdownFile():
         for split in splits:
             if len(re.findall(full_regex, split["header"])) > 0:
                 matching_splits.append(split)
+
         
         if not return_all:
             split = self._check_and_choose_header(matching_splits)
@@ -186,13 +192,23 @@ class mARkdownFile():
         else:
             return matching_splits 
 
+    def add_ms_to_splits(self, computed_splits):
+        """Takes as input a set of computed splits (list of dict with "header" and "text" fields) and adds ms data to each field,
+        using the _identify_nearest_ms field. Looks for the ms in the "text" field of the computed splits"""
+        updated_output = []
+        for idx, split in enumerate(computed_splits):
+            split["first_ms"], split["last_ms"] = self._identify_nearest_ms(split["text"], idx, computed_splits)
+            updated_output.append(split)
+        
+        return updated_output
+
     def _identify_nearest_ms(self, current_split, current_split_id, all_splits):
         """Helper function for split_on_level to retrieve the nearest ms - looks for ms - if there are
         multiple it returns the integers of the first and last. If none are found, it goes forward until it finds an ms returns the
         same integer twice (it is just located in one ms)
         Function should be used optionally by split_on_level, as it will use a little more computation on each section being processed
         """
-        ms_regex = r"ms(\d+)"
+        ms_regex = r"ms(\d+)"     
         current_ms = re.findall(ms_regex, current_split)
         find_count = len(current_ms)
         if find_count == 1:
@@ -202,7 +218,7 @@ class mARkdownFile():
         else:
             while find_count == 0:
                 current_split_id +=1
-                current_ms = re.findall(ms_regex, all_splits[current_split_id])
+                current_ms = re.findall(ms_regex, all_splits[current_split_id]["text"])
                 find_count = len(current_ms)
             return current_ms[0], current_ms[0]
                 
@@ -228,7 +244,7 @@ class mARkdownFile():
                 if first_match:
                     first_match_idx = i
                     first_match=False
-                text = splits[i+1]                
+                text = splits[i+1]            
                 if get_length:
                     splits_out.append({"header": split, "text": text, "w_length": ar_tok_cnt(text)})
                 else:
