@@ -150,10 +150,12 @@ class mARkdownFile():
 
 
 
-    def search_for_header(self, regex, level=None, bio_header=False, return_all=True, get_length=False):
+    def search_for_header(self, regex, level=None, bio_header=False, return_all=True, get_length=False, exact_match = False):
         """Return the section of the text where the header contains the regex
         if level is none - search all levels and split based on retrieved level
-        If return_all is False, script will ask user to choose the desired header"""
+        If return_all is False, script will ask user to choose the desired header
+        If exact_match - then we do not construct a regex, we look for an exact match for the heading (to be used where you
+        are feeding an output produced by this class back in to locate the headings and do further computation)"""
         if level is None and self.presplits:
             full_regex = self.header_contains_regex(regex, level=None, bio_header=bio_header)
             results = re.findall(full_regex, self.mARkdown_text)
@@ -168,7 +170,12 @@ class mARkdownFile():
         else:
             splits = self.split_on_level(level, bio_header=bio_header, get_length=get_length)        
         matching_splits = []
-        full_regex = self.header_contains_regex(regex, level=level, bio_header=bio_header)
+        
+        # If we are not matching the regex exactly, we create a specialist regex
+        if exact_match:
+            full_regex = regex
+        else:
+            full_regex = self.header_contains_regex(regex, level=level, bio_header=bio_header)
         for split in splits:
             if len(re.findall(full_regex, split["header"])) > 0:
                 matching_splits.append(split)
