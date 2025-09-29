@@ -186,6 +186,27 @@ class mARkdownFile():
         else:
             return matching_splits 
 
+    def _identify_nearest_ms(self, current_split, current_split_id, all_splits):
+        """Helper function for split_on_level to retrieve the nearest ms - looks for ms - if there are
+        multiple it returns the integers of the first and last. If none are found, it goes forward until it finds an ms returns the
+        same integer twice (it is just located in one ms)
+        Function should be used optionally by split_on_level, as it will use a little more computation on each section being processed
+        """
+        ms_regex = r"ms(\d+)"
+        current_ms = re.findall(ms_regex, current_split)
+        find_count = len(current_ms)
+        if find_count == 1:
+            return current_ms[0], current_ms[0]
+        elif find_count > 1:
+            return current_ms[0], current_ms[-1]
+        else:
+            while find_count == 0:
+                current_split_id +=1
+                current_ms = re.findall(ms_regex, all_splits[current_split_id])
+                find_count = len(current_ms)
+            return current_ms[0], current_ms[0]
+                
+
     def split_on_level(self, level, split=None, get_length=False, bio_header=False):
         """Split the text by a level header. If a split is provided, use that text to split
         Return list of dicts {"header": "", "text" : ""}"""
